@@ -1,3 +1,70 @@
-.heading {
-	color: red;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, serif;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.topbanner {
+	width: 100%;
+	background-color: #7f7fef;
+	z-index: 1000;
+	position: fixed;
+}
+
+.heading-text {
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	font-weight: 200;
+	font-size: 4em;
+	text-shadow: 0px 2px 1px #888;
+}
+
+.l-wrap {
+	max-width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 100px;
+}
+
+.menu-box {
+	width:100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.menu li {
+	margin: 20px;
+	padding: 20px;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5em;
+	color: #000;
+	border-radius: 0px 50px;
+	transition: background-color 0.9s, color 0.9s, font-size 0.9s, text-shadow 0.9s, box-shadow 0.9s;
+}
+
+.menu li:hover, menu li:active {
+	background-color: #7f7fef;
+	color: white;
+	font-size: 2em;
+	text-shadow: 0px 2px 1px #888;
+	box-shadow: 0px 6px 3px #888;
+}
+
+.three-col-grid .grid-item {
+	width: calc((100% - 20px * 3) / 3);
+	margin: 10px;
+	padding: 20px 0 20px 0;
+	float: left; 
+	display: inline-block;
+	text-align: center;
+}
+
+.three-col-grid:after {
+  display: table;
+  clear: both;
+  content: '';
 }
